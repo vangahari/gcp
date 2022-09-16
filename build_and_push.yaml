@@ -2,7 +2,7 @@ name: Docker-GCP
 on:
   push:
     branches:
-      - master
+      - master 
 jobs:
   build:
     name: Build docker image and push to GCR 
