@@ -1,0 +1,60 @@
+# Default values for ams_api.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+pdbMinAvailable: 1
+
+image:
+  repository: gcr.io/apolloio-362016/apolloio-helloworld
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+
+imagePullSecrets:
+  - name: gcp-registry-secret
+
+podAnnotations: {}
+
+podSecurityContext:
+  {}
+  # runAsNonRoot: true
+  # runAsUser: 1000
+  # runAsGroup: 3000
+  # fsGroup: 2000
+
+securityContext:
+  {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # # readOnlyRootFilesystem: true
+  # allowPrivilegeEscalation: false
+  # privileged: false
+
+service:
+  type: ClusterIP
+  servicePort: 80
+  containerPort: 5000
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 250Mi
+  requests:
+    cpu: 50m
+    memory: 150Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
