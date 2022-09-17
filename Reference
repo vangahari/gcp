@@ -1,0 +1,19 @@
+## Terraform Module GKE
+https://registry.terraform.io/modules/terraform-google-modules/kubernetes-engine/google/latest
+
+## Ingress Controller installation
+https://cloud.google.com/community/tutorials/nginx-ingress-gke
+https://cloud.google.com/sdk/docs/cheatsheet
+
+## Lets encrypt cert Installation
+https://cert-manager.io/docs/installation/helm/
+https://cloud.yandex.com/en/docs/managed-kubernetes/tutorials/ingress-cert-manager
+
+## Free domain Name
+https://www.freenom.com/en/index.html?lang=en
+
+## Helm installation
+https://helm.sh/docs/intro/install/
+https://phoenixnap.com/kb/helm-commands-cheat-sheet
+
+
