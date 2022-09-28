@@ -10,10 +10,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-      - apollo-helloworld.vangahari.ml
+      - helloworld.vangahari.ml
       secretName: letsencrypt
   rules:
-      - host: apollo-helloworld.vangahari.ml
+      - host: helloworld.vangahari.ml
         http:
           paths:
             - path: /
