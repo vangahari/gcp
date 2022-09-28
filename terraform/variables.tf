@@ -1,5 +1,5 @@
 variable "project" {
-    default = "apolloio-362016"
+    default = "project-362016"
 }
 
 variable "region" { 
@@ -11,7 +11,7 @@ variable "zones" {
 }
 
 variable "cluster_name" {
-    default = "apollo-demo-gke"
+    default = "demo-gke"
 }
 
 variable "network" { 
