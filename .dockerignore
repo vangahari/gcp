@@ -1,0 +1,9 @@
+helmcharts
+terraform
+nginx.conf
+.git*
+.cache
+READ*
+Ref*
+.dockerignore
+Dockerfile
